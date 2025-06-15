@@ -1,0 +1,5 @@
+Kristina|123|parola|Business
+Lora|124|parola|Client
+Ivan|125|parola|Client
+Yana|126|parola|Client
+Yana|126|parola|Client

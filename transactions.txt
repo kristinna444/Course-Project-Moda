@@ -1,0 +1,3 @@
+Check to: 123456, Amount: 20
+New purchase from: Ivan Amount: 19
+New purchase from: Ivan Amount: 29
