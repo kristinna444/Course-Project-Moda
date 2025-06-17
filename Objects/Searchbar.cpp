@@ -16,7 +16,7 @@ namespace {
 			}
 		}
 	}
-} //change
+} 
 
 void Searchbar::freeDynamicMemory()
 {
@@ -101,7 +101,7 @@ Searchbar::Searchbar(const char* fileName): size(0), capacity(0), products(nullp
 	}
 
 	input.close();
-}//change
+}
 
 Searchbar::Searchbar(const Searchbar& other)
 {
@@ -296,8 +296,6 @@ void Searchbar::rateProduct(int productID, double rating)
 	for (size_t i = 0; i < size; i++) {
 		if (products[i].getID() == productID) {
 			products[i].setRating(rating);
-			std::cout << products[i].getRating() << std::endl;
-			products[i].print();
 			return;
 		}
 	}

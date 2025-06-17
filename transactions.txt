@@ -1,3 +1,13 @@
-Check to: 123456, Amount: 20
-New purchase from: Ivan Amount: 19
-New purchase from: Ivan Amount: 29
+Check to: 126, Amount: 1000
+Check to: 125, Amount: 500
+Check to: 127, Amount: 900
+New purchase from: Mira Amount: 260
+New purchase from: Yana Amount: 60
+Refund to: 127 Amount: 60, 0 points
+New purchase from: Mira Amount: 107
+Refund to: 126 Amount: 107, 0 points
+New purchase from: Mira Amount: 120
+Refund to: 126 Amount: 120, 0 points
+New purchase from: Yana Amount: 120
+New purchase from: Yana Amount: 60
+Refund to: 127 Amount: 60, 0 points

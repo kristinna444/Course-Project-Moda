@@ -1,11 +1,9 @@
 #pragma once
-
 #include "Command.h"
 
-class ViewTransactionsCommand : public Command
+class HelpCommand : public Command
 {
 public:
-	ViewTransactionsCommand() = default;
+	HelpCommand() = default;
 	void execute(System& system) override;
-
 };

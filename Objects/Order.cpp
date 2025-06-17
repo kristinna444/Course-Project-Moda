@@ -75,6 +75,11 @@ double Order::getPrice() const
 	return totalPrice;
 }
 
+double Order::getDiscount() const
+{
+	return discount;
+}
+
 const Product& Order::operator[](size_t index) const
 {
 	return products[index];

@@ -58,8 +58,5 @@ void ApproveRefundCommand::execute(System& system)
 	}
 	
 	User* user = system.getClientByName(clientName);
-	if (Client* client = dynamic_cast<Client*>(user)) {
-		client->addToWallet(sumToRefund);
-		client->setPointsToZero();
-	}
+	system.transaction(user->getEGN(), sumToRefund, 0);
 }

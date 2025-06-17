@@ -1,3 +1,1 @@
-Miroslava|1xdress, 50 Delivered
-Miroslava|2xskirt, 60 Rejected
-Miroslava|1xdress, 30 Rejected
+Yana|2xshirt, 60 0 Rejected

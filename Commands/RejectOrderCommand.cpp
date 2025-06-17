@@ -19,11 +19,9 @@ void RejectOrderCommand::execute(System& system)
 
 	MyString clientName = orderToReject.getClientName();
 	double sumToReturn = orderToReject.getPrice();
+	double pointsToReturn = (orderToReject.getDiscount() * 100);
 
 	User* user = system.getClientByName(clientName);
-	if (Client* client = dynamic_cast<Client*>(user)) {
-		client->addToWallet(sumToReturn); 
-		//return points
-	}
+	system.transaction(user->getEGN(), sumToReturn, pointsToReturn);
 
 }

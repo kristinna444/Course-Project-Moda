@@ -5,19 +5,27 @@ Client::Client(const MyString& name, const MyString& EGN, const MyString& passwo
 
 void Client::setWallet(Wallet* wallet)
 {
-	delete this->wallet;
 	this->wallet = wallet;
 }
 
 void Client::setCart(Cart* cart)
 {
-	delete[] this->cart;
 	this->cart = cart;
 }
 
 const char* Client::getRole() const
 {
 	return "Client";
+}
+
+void Client::help() const
+{
+	std::cout << "As a client you can: " << std::endl;
+	std::cout << "- view all available products" << std::endl;
+	std::cout << "- manage your cart by adding and removing items" << std::endl;
+	std::cout << "- manage your wallet by using discounts" << std::endl;
+	std::cout << "- make, confirm and refund orders" << std::endl;
+	std::cout << "- rate products" << std::endl;
 }
 
 User* Client::clone() const

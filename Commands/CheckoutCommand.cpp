@@ -13,6 +13,7 @@ void CheckoutCommand::execute(System& system)
 
 		if (successful) {
 			system.deleteCart(client->getName()); 
+			std::cout << "Successfully checked out!" << std::endl;
 		}
 	}
 }

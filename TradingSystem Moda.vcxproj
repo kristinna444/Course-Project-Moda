@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{a5d314c4-fbeb-48ba-ac0d-6c1fc0860ebf}</ProjectGuid>
+    <RootNamespace>TradingSystemModa</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Commands\AddItemCommand.cpp" />
+    <ClCompile Include="Commands\AddToCartCommand.cpp" />
+    <ClCompile Include="Commands\HelpCommand.cpp" />
+    <ClCompile Include="Commands\CustomerInsightsCommand.cpp" />
+    <ClCompile Include="Models\Admin.cpp" />
+    <ClCompile Include="Commands\ApplyDiscountCommand.cpp" />
+    <ClCompile Include="Commands\ApproveOrderCommand.cpp" />
+    <ClCompile Include="Commands\ApproveRefundCommand.cpp" />
+    <ClCompile Include="Objects\Bank.cpp" />
+    <ClCompile Include="Models\Business.cpp" />
+    <ClCompile Include="Objects\Cart.cpp" />
+    <ClCompile Include="Objects\CartContainer.cpp" />
+    <ClCompile Include="Objects\Check.cpp" />
+    <ClCompile Include="Commands\CheckBalanceCommand.cpp" />
+    <ClCompile Include="Objects\CheckContainer.cpp" />
+    <ClCompile Include="Commands\CheckoutCommand.cpp" />
+    <ClCompile Include="Models\Client.cpp" />
+    <ClCompile Include="Commands\CommandFactory.cpp" />
+    <ClCompile Include="Commands\ConfirmOrderCommand.cpp" />
+    <ClCompile Include="Commands\ListBestSellingProductsCommand.cpp" />
+    <ClCompile Include="Commands\ListOrdersCommand.cpp" />
+    <ClCompile Include="Commands\ListPendingOrdersCommand.cpp" />
+    <ClCompile Include="Commands\ListProductsCommand.cpp" />
+    <ClCompile Include="Commands\ListRefundsCommand.cpp" />
+    <ClCompile Include="Commands\ListShippedOrdersCommand.cpp" />
+    <ClCompile Include="Commands\LoginCommand.cpp" />
+    <ClCompile Include="Commands\LogoutCommand.cpp" />
+    <ClCompile Include="Objects\Mailbox.cpp" />
+    <ClCompile Include="MyString.cpp" />
+    <ClCompile Include="Objects\Order.cpp" />
+    <ClCompile Include="Objects\OrderContainer.cpp" />
+    <ClCompile Include="Commands\OrderHistoryCommand.cpp" />
+    <ClCompile Include="Objects\Product.cpp" />
+    <ClCompile Include="Commands\RateProductCommand.cpp" />
+    <ClCompile Include="Objects\Rating.cpp" />
+    <ClCompile Include="Objects\RatingContainer.cpp" />
+    <ClCompile Include="Commands\RedeemCommand.cpp" />
+    <ClCompile Include="Commands\RefundedOrdersCommand.cpp" />
+    <ClCompile Include="Commands\RegisterCommand.cpp" />
+    <ClCompile Include="Commands\RejectOrderCommand.cpp" />
+    <ClCompile Include="Commands\RejectRefundCommand.cpp" />
+    <ClCompile Include="Commands\RemoveDiscountCommand.cpp" />
+    <ClCompile Include="Commands\RemoveFromCartCommand.cpp" />
+    <ClCompile Include="Commands\RemoveItemCommand.cpp" />
+    <ClCompile Include="Commands\RequestRefundCommand.cpp" />
+    <ClCompile Include="Objects\Searchbar.cpp" />
+    <ClCompile Include="Commands\SendCheckCommand.cpp" />
+    <ClCompile Include="Storage.cpp" />
+    <ClCompile Include="System.cpp" />
+    <ClCompile Include="TradingSystem Moda.cpp" />
+    <ClCompile Include="Models\User.cpp" />
+    <ClCompile Include="Models\UserFactory.cpp" />
+    <ClCompile Include="Models\UsersContainer.cpp" />
+    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="Commands\ViewCartCommand.cpp" />
+    <ClCompile Include="Commands\ViewProductCommand.cpp" />
+    <ClCompile Include="Commands\ViewRevenueCommand.cpp" />
+    <ClCompile Include="Objects\Wallet.cpp" />
+    <ClCompile Include="Commands\ViewProfileCommand.cpp" />
+    <ClCompile Include="Commands\ViewTransactionsCommand.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Commands\AddItemCommand.h" />
+    <ClInclude Include="Commands\AddToCartCommand.h" />
+    <ClInclude Include="Commands\HelpCommand.h" />
+    <ClInclude Include="Commands\CustomerInsightsCommand.h" />
+    <ClInclude Include="Models\Admin.h" />
+    <ClInclude Include="Commands\ApplyDiscountCommand.h" />
+    <ClInclude Include="Commands\ApproveOrderCommand.h" />
+    <ClInclude Include="Commands\ApproveRefundCommand.h" />
+    <ClInclude Include="Objects\Bank.h" />
+    <ClInclude Include="Models\Business.h" />
+    <ClInclude Include="Objects\Cart.h" />
+    <ClInclude Include="Objects\CartContainer.h" />
+    <ClInclude Include="Objects\Check.h" />
+    <ClInclude Include="Commands\CheckBalanceCommand.h" />
+    <ClInclude Include="Commands\CheckoutCommand.h" />
+    <ClInclude Include="Models\Client.h" />
+    <ClInclude Include="Commands\Command.h" />
+    <ClInclude Include="Commands\CommandFactory.h" />
+    <ClInclude Include="Commands\ConfirmOrderCommand.h" />
+    <ClInclude Include="Commands\ListBestSellingProductsCommand.h" />
+    <ClInclude Include="Commands\ListOrdersCommand.h" />
+    <ClInclude Include="Commands\ListPendingOrdersCommand.h" />
+    <ClInclude Include="Commands\ListProductsCommand.h" />
+    <ClInclude Include="Commands\ListRefundsCommand.h" />
+    <ClInclude Include="Commands\ListShippedOrdersCommand.h" />
+    <ClInclude Include="Commands\LoginCommand.h" />
+    <ClInclude Include="Commands\LogoutCommand.h" />
+    <ClInclude Include="Objects\Mailbox.h" />
+    <ClInclude Include="MyString.h" />
+    <ClInclude Include="Objects\Order.h" />
+    <ClInclude Include="Objects\OrderContainer.h" />
+    <ClInclude Include="Commands\OrderHistoryCommand.h" />
+    <ClInclude Include="Objects\Product.h" />
+    <ClInclude Include="Commands\RateProductCommand.h" />
+    <ClInclude Include="Objects\Rating.h" />
+    <ClInclude Include="Objects\RatingContainer.h" />
+    <ClInclude Include="Commands\RedeemCommand.h" />
+    <ClInclude Include="Commands\RefundedOrdersCommand.h" />
+    <ClInclude Include="Commands\RegisterCommand.h" />
+    <ClInclude Include="Commands\RejectOrderCommand.h" />
+    <ClInclude Include="Commands\RejectRefundCommand.h" />
+    <ClInclude Include="Commands\RemoveDiscountCommand.h" />
+    <ClInclude Include="Commands\RemoveFromCartCommand.h" />
+    <ClInclude Include="Commands\RemoveItemCommand.h" />
+    <ClInclude Include="Commands\RequestRefundCommand.h" />
+    <ClInclude Include="Objects\Searchbar.h" />
+    <ClInclude Include="Commands\SendCheckCommand.h" />
+    <ClInclude Include="Storage.h" />
+    <ClInclude Include="System.h" />
+    <ClInclude Include="Objects\CheckContainer.h" />
+    <ClInclude Include="Models\User.h" />
+    <ClInclude Include="Models\UserFactory.h" />
+    <ClInclude Include="Models\UsersContainer.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="Commands\ViewCartCommand.h" />
+    <ClInclude Include="Commands\ViewProductCommand.h" />
+    <ClInclude Include="Commands\ViewRevenueCommand.h" />
+    <ClInclude Include="Commands\ViewTransactionsCommand.h" />
+    <ClInclude Include="Objects\Wallet.h" />
+    <ClInclude Include="Commands\ViewProfileCommand.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="bank.txt" />
+    <Text Include="carts.txt" />
+    <Text Include="descriptions.txt" />
+    <Text Include="items_collection.txt" />
+    <Text Include="orders.txt" />
+    <Text Include="ratings.txt" />
+    <Text Include="refunds.txt" />
+    <Text Include="refund_requests.txt" />
+    <Text Include="rejected_requests.txt" />
+    <Text Include="transactions.txt" />
+    <Text Include="uncashed_checks.txt" />
+    <Text Include="users.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

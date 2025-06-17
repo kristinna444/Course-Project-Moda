@@ -1,5 +1,5 @@
-Kristina|123|parola|Business
-Lora|124|parola|Client
+Kristina|123|parola|Administrator
+Lora|124|parola|Business
 Ivan|125|parola|Client
-Yana|126|parola|Client
-Yana|126|parola|Client
+Mira|126|parola|Client
+Yana|127|parola|Client

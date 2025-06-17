@@ -2,10 +2,10 @@
 
 #include "Command.h"
 
-class ViewTransactionsCommand : public Command
+class CustomerInsightsCommand : public Command 
 {
 public:
-	ViewTransactionsCommand() = default;
+	CustomerInsightsCommand() = default;
 	void execute(System& system) override;
-
 };
+

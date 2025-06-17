@@ -8,6 +8,7 @@ System::System()
 void System::load()
 {
 	users.loadUsersFromFile(); 
+	bank.load(); 
 }
 
 const User* System::getCurrentUser() const
@@ -23,7 +24,7 @@ User* System::getCurrentUser()
 void System::setCurrentUser(User* user)
 {
 	currentUser = user;
-
+	
 	if (strcmp(currentUser->getRole(), "Client") == 0) {
 		setUserData(currentUser);
 	}
@@ -31,7 +32,6 @@ void System::setCurrentUser(User* user)
 
 void System::setUserData(User* user)
 {
-	bank.load();
 	carts.load();
 
 	if (Client* client = dynamic_cast<Client*>(currentUser)) {
@@ -61,9 +61,48 @@ User* System::getClientByName(const MyString& name)
 	return nullptr;
 }
 
+const User* System::getUser(size_t index) const
+{
+	return users[index];
+}
+
+size_t System::getNumberOfUsers() const
+{
+	return users.getNumberOfUsers(); 
+}
+
 void System::deleteCart(const MyString& clientName)
 {
 	carts.removeCart(clientName);
+}
+
+void System::transaction(const MyString& clientEGN, double sumToReturn, double pointsToReturn)
+{
+	std::ofstream ofs("transactions.txt", std::ios::app);
+	if (!ofs.is_open()) {
+		throw std::runtime_error("Program couldn't open file");
+	}
+
+	for (size_t i = 0; i < bank.getSize(); i++) {
+		if (bank[i].getClientEGN() == clientEGN) {
+			bank[i].addMoney(sumToReturn);
+
+			if (pointsToReturn == 0) {
+				bank[i].setPoints(0);
+			}
+			else if (pointsToReturn > 0) {
+				bank[i].addPoints(pointsToReturn); 
+			}
+			
+			ofs << "Refund to: " << clientEGN << " Amount: " << sumToReturn << ", " << pointsToReturn << " points" << std::endl;
+			ofs.close();
+
+			return;
+		}
+	}
+
+	ofs.close();
+	std::cout << "Unsuccessful transaction! We couldn't find this wallet" << std::endl;
 }
 
 void System::addUser(const MyString& name, const MyString& EGN, const MyString& password, const char* role)
@@ -89,24 +128,23 @@ void System::addUser(const MyString& name, const MyString& EGN, const MyString& 
 
 User* System::getUserFromFile(const MyString& name, const MyString& password)
 {
-	users.loadUsersFromFile();
-
 	for (size_t i = 0; i < users.getNumberOfUsers(); i++) {
 		if (name == users[i]->getName() && password == users[i]->getPassword()) {
 			return users[i];
 		}
 	}
-
+	
 	return nullptr;
 }
 
 void System::logout()
 {
 	if (Client* client = dynamic_cast<Client*>(currentUser)) {
-		bank.updateFileWithWallets();
 		carts.updateFileWithCarts();
+		 
 	}
 
-	delete currentUser;
+	bank.updateFileWithWallets();
+
 	currentUser = nullptr;
 }

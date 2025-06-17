@@ -19,7 +19,7 @@ void RequestRefundCommand::execute(System& system)
 				strcmp(orderContainer[i - 1].getStatus(), "Delivered") == 0) {
 
 				orderContainer[i - 1].writeOrderToFile("refund_requests.txt");
-
+				std::cout << "Refund request sent!" << std::endl;
 				return;
 			}
 		}

@@ -31,6 +31,10 @@
 #include "RejectRefundCommand.h"
 #include "SendCheckCommand.h"
 #include "LogoutCommand.h"
+#include "HelpCommand.h"
+#include "ViewProfileCommand.h"
+#include "ViewTransactionsCommand.h"
+#include "CustomerInsightsCommand.h"
 
 Command* CommandFactory::create(const char* input)
 {
@@ -180,6 +184,18 @@ Command* CommandFactory::create(const char* input)
 	}
 	else if (strcmp(input, "logout") == 0) {
 		return new LogoutCommand();
+	}
+	else if (strcmp(input, "help") == 0) {
+		return new HelpCommand();
+	}
+	else if (strcmp(input, "view_profile") == 0) {
+		return new ViewProfileCommand();
+	}
+	else if (strcmp(input, "view_transactions") == 0) {
+		return new ViewTransactionsCommand();
+	}
+	else if (strcmp(input, "customer_insights") == 0) {
+		return new CustomerInsightsCommand();
 	}
 
 	throw std::logic_error("Invalid command");

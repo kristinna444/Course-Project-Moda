@@ -60,7 +60,7 @@ size_t Product::getNumberOfSales() const
 void Product::writeProductToFile(std::ofstream& output) const
 {
 	output << ID << " " << name << "|" << price << " " << quantity << " " << numberOfSales << " " 
-		<< rating << " " << description << std::endl; //chng
+		<< rating << " " << description << std::endl; 
 
 }
 

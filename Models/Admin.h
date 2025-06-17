@@ -9,6 +9,7 @@ public:
 	Administrator(const MyString& name, const MyString& EGN, const MyString& password);
 
 	const char* getRole() const override;
+	void help() const override;
 
 	User* clone() const override;
 	void writeToFile(std::ofstream& output) const override;

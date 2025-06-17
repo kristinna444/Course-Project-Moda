@@ -17,3 +17,8 @@ const MyString& User::getEGN() const
 {
 	return EGN;
 }
+
+void User::viewProfile() const
+{
+	std::cout << "Your profile: " << name << " EGN: " << EGN << std::endl;
+}

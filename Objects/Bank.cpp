@@ -35,6 +35,16 @@ Bank& Bank::operator=(const Bank& other)
 	return *this;
 }
 
+Wallet& Bank::operator[](size_t index)
+{
+	return wallets[index];
+}
+
+size_t Bank::getSize() const
+{
+	return size; 
+}
+
 Wallet* Bank::getWallet(const MyString& clientEGN)
 {
 	for (size_t i = 0; i < size; i++) {

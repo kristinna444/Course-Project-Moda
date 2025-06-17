@@ -92,6 +92,15 @@ User* UsersContainer::operator[](size_t index)
 	if (index >= size) {
 		throw std::out_of_range("Such user doesn't exist");
 	}
+	
+	return users[index];
+}
+
+const User* UsersContainer::operator[](size_t index) const
+{
+	if (index >= size) {
+		throw std::out_of_range("Such user doesn't exist");
+	}
 
 	return users[index];
 }

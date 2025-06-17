@@ -23,6 +23,9 @@ public:
 	const User* getCurrentUser() const;
 	User* getCurrentUser();
 	User* getClientByName(const MyString& name);
+	const User* getUser(size_t index) const;
+
+	size_t getNumberOfUsers() const;
 
 	void setCurrentUser(User* user);
 	void setUserData(User* user);
@@ -31,6 +34,7 @@ public:
 	User* getUserFromFile(const MyString& name, const MyString& password); 
 
 	void deleteCart(const MyString& clientName);
+	void transaction(const MyString& clientEGN, double sumToReturn, double pointsToReturn);
 
 	void logout();
 }; 

@@ -18,6 +18,8 @@ public:
 	const MyString& getEGN() const;
 
 	virtual const char* getRole() const = 0;
+	virtual void help() const = 0;
+	void viewProfile() const;
 
 	virtual User* clone() const = 0;
 	virtual void writeToFile(std::ofstream& output) const = 0;

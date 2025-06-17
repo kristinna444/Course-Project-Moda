@@ -1,6 +1,8 @@
 ﻿// TradingSystem Moda.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
+/* Kristina Gramatikova 0MI0600538 */
+
 
 #include "System.h"
 #include "Commands/CommandFactory.h"

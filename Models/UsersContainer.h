@@ -27,6 +27,7 @@ public:
 
 	size_t getNumberOfUsers() const;
 	User* operator[](size_t index);
+	const User* operator[](size_t index) const;
 
 	void addUser(const User* newUser);
 	void loadUsersFromFile(); 

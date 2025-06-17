@@ -37,6 +37,7 @@ public:
 
 	double getPoints() const;
 	double getPrice() const;
+	double getDiscount() const;
 
 	size_t getProductQuantity(const MyString& productName) const; 
 	const Product& operator[](size_t index) const;

@@ -117,8 +117,6 @@ double RatingContainer::getRating(int productID) const
 
 	if (counter == 0) return 0;
 
-	std::cout << sumOfRatings << std::endl;
-	std::cout << counter << std::endl;
 	return sumOfRatings / counter;
 }
 
@@ -151,7 +149,6 @@ bool RatingContainer::removeRating(int productID, const MyString& clientName)
 		}
 	}
 
-	std::cout << "Sorry! We couldn't find any reviews on this product from that client." << std::endl;
 	return false;
 }
 

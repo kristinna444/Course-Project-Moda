@@ -22,6 +22,7 @@ public:
 	void setCart(Cart* cart);
 
 	const char* getRole() const override;
+	void help() const override;
 	User* clone() const override;
 	void writeToFile(std::ofstream& output) const override;
 

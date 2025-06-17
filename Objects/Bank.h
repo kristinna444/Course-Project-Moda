@@ -16,6 +16,8 @@ public:
 	Bank();
 	Bank(const Bank& other);
 	Bank& operator=(const Bank& other);
+	Wallet& operator[](size_t index);
+	size_t getSize() const;
 
 	Wallet* getWallet(const MyString& clientEGN);
 

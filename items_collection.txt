@@ -1,4 +1,4 @@
-2 shirt|5 34 6 0 lenin
-3 obuvki|100 20 0 0 kojeni
-
-
+1 elegant dress|80 39 1 5  satin evening dress
+2 high heels|120 28 2 4.5  leather heels
+3 earrings|60 29 1 0  gold
+4 shirt|30 40 0 0  cotton shirt

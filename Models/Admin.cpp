@@ -8,6 +8,14 @@ const char* Administrator::getRole() const
 	return "Administrator";
 }
 
+void Administrator::help() const
+{
+	std::cout << "As an administrator you can: " << std::endl;
+	std::cout << "- send checks to clients" << std::endl;
+	std::cout << "- view statistics about clients" << std::endl;
+	std::cout << "- view all transactions made" << std::endl;
+}
+
 User* Administrator::clone() const
 {
 	return new Administrator(*this);
